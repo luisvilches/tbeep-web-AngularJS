@@ -1,0 +1,79 @@
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+.background{
+	background-color: #2980b9;
+	width: 100%;
+	height: 300px;
+}
+body{
+	background-color: #ecf0f1;
+}
+
+.logo{
+	margin-top: 70px;
+	color: #f39c12;
+	font-size: 80px;
+	font-family: 'Baloo Paaji', cursive;
+}
+
+.subtitulo{
+	color: #ecf0f1;
+	font-size: 25px;
+}
+
+.input-max{
+	max-width: 300px;
+	margin-top: 15px;
+}
+
+.marginTop{
+	margin-top: 25px;
+}
+
+.Loader{
+	margin-top: 70px;
+	display: none;
+}
+
+.marginBottom{
+	margin-bottom: 25px;
+}
+
+
+.saldo{
+	color: #2980b9;
+	font-size: 50px;
+	font-family: 'Baloo Paaji', cursive;
+}
+
+.item-data{
+	font-family: 'Baloo Paaji', cursive;
+}
+
+.error{
+	color: #e74c3c;
+}
+
+.success{
+	color: #2980b9;
+}
+.loadOn{
+	display: block;
+}
+.loadOff{
+	display: none;
+}

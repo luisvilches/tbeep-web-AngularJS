@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<title>Primera App-AngularJS</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="Demo project">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="./bower_components/angular/angular.min.js" ></script>
+		<script type="text/javascript" src="./controller/controller.js"></script>
+		<script type="text/javascript" src=""></script>
+		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/loader.css">
+	</head>
+	<body  ng-controller="consultaSaldo">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 background">
+					<div class="center-block">
+						<h1 class="text-center logo">Tbeep Web</h1>
+						<h3 class="text-center subtitulo">Consulta tu Saldo BIP!!</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="center-block">
+						<form>
+							<input ng-model="numeroBip" type="text" class="form-control center-block input-max text-center" placeholder="Ingresa el N° de Tarjeta Bip" required="">
+
+							<button ng-click="consulta()" class="btn btn-primary center-block input-max">Consultar Saldo</button>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="center-block container">
+				<div class="loader center-block Loader" ng-class="load" id="loader">loader...</div>
+				<div>
+					<p class="text-center marginTop item-data">{{textSaldo}}</p>
+					<h2 class="text-center saldo" ng-class="status">{{ saldo }}</h2>
+					<ul class="list-inline text-center">
+						<li class="item-data">{{textNumero}} {{numero}}</li>
+						<li class="item-data">{{textContrato}} {{contrato}}</li>
+						<li class="item-data">{{textFecha}} {{fecha}}</li>
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+	</body>
+</html>
+
