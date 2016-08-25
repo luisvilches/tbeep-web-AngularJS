@@ -7,10 +7,12 @@ angular.module('app', [])
 	$scope.consulta = function()
 	{
 		$scope.load = 'loadOn'
+		$scope.dat = 'datOff'
 		$http.get('http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+$scope.numeroBip)
 		.success(function(data)
 		{
 			$scope.load = 'loadOff'
+			$scope.dat = 'datOn'
 			$scope.status = 'success'
 			$scope.numero = data.id;
 			$scope.saldo = data.saldoTarjeta;
@@ -25,6 +27,7 @@ angular.module('app', [])
 		.error(function(err)
 		{
 			$scope.load = 'loadOff'
+			$scope.dat = 'datOn'
 			$scope.status = 'error'
 			$scope.saldo = err.error;
 			$scope.textSaldo = "Error:";

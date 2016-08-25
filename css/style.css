@@ -49,6 +49,10 @@ body{
 	display: none;
 }
 
+.datos{
+	display: none;
+}
+
 .marginBottom{
 	margin-bottom: 25px;
 }
@@ -77,3 +81,11 @@ body{
 .loadOff{
 	display: none;
 }
+
+.datOn{
+	display: block;
+}
+.ldatOff{
+	display: none;
+}
+
